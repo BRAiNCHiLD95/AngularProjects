@@ -1,6 +1,10 @@
 # JTP - An Online Learning Platform
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
+It uses PHP at the BackEnd and delivers content using a RESTful API.
+
+## Contact Me
+You can raise issues or email me in case of doubts.
 
 ## Development server
 
