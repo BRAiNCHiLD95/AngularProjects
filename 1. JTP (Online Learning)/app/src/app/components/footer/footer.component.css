@@ -1,0 +1,15 @@
+footer {
+    border-top: 1px solid #97D595;
+    color: #97D595;
+    background: #000000;
+    padding: 15px 0px;
+    z-index: 999;
+}
+
+a#contact_link {
+    display: inline;
+    position: absolute;
+    right: 15px;
+    color: #97D595;
+    text-decoration: none;
+}
