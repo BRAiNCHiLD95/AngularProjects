@@ -1,0 +1,45 @@
+.bgdarknav {
+    background: #000000;
+    border-bottom: 1px solid #97D595;
+}
+
+#logo_nav {
+    color: #97D595;
+    text-decoration: none !important;
+}
+
+#menu {
+    border: none;
+    font-size: 30px;
+    outline: none;
+    color: #97D595 !important;
+    padding: 16px 4px;
+}
+
+#navbarJTP {
+    margin: -2px 0px -8px 0px;
+    background: none !important;
+}
+
+#navbarJTP ul li a {
+    color: #FFFFFF;
+    padding: .5em;
+    font-size: 1em;
+}
+
+#navbarJTP ul li a:hover {
+    background: #97D595;
+    color: #000000;
+} 
+
+#navbarJTP ul li a.active {
+    background: #97D595 !important;
+    color: #AE142E !important;
+    outline: none !important;
+}
+
+@media screen and (min-width: 315px) and (max-width: 410px) {
+    #logo_nav {
+        font-size: 18px;
+    }
+}
