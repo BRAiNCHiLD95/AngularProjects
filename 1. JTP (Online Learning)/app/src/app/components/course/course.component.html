@@ -1,0 +1,20 @@
+<section id="parentDiv">
+    <a href="javascript:void(0)" class="openBtn" (click)="openNav()"><fa name="bars"></fa><span>View Curriculum</span></a>
+  <aside id="course-aside">
+      <a href="javascript:void(0)" class="closeBtn" (click)="closeNav()"><span>Immersive Mode</span><fa name="times"></fa></a>
+      <h3 class="font-weigh-bold text-center">Course Curriculum</h3>
+      <ul id="subtopics">
+        <li class="nav-item" *ngFor="let item of subtopics | groupBy:'subtopic_name'">
+          <h6>{{ item.key }}</h6>
+          <ul id="titles">
+            <li class="nav-item" *ngFor="let title of item.value">
+                <a class="nav-link" routerLink="content/{{ title.content_id }}" routerLinkActive="active">{{ title.title }}</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+    <main id="course-main">
+      <router-outlet></router-outlet>
+    </main>
+</section>

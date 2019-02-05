@@ -1,0 +1,97 @@
+section#parentDiv {
+    display: flex;
+}
+
+/* Make the sidebar take the entire width of the screen */
+aside#course-aside {
+    flex-shrink: 0;
+    width: 25%;
+    position: fixed;
+    top: 112px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 1;
+    background-color: #97D595;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 40px;
+    transition: 0.5s;
+}
+
+.openBtn {
+    position: fixed;
+    left: 5px;
+    font-size: 30px;
+    border: none;
+    text-decoration: none;
+}
+
+.openBtn span {
+    font-size: 20px;
+    position: relative;
+    top: -3px;
+    left: 2px;
+}
+
+.closeBtn span {
+    font-size: 20px;
+    position: relative;
+    top: -3px;
+    right: 4px;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    font-size: 30px;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+#course-main {
+    width: 75%;
+    flex-grow: 1;
+    margin-left: 25%;
+    height: 100%;
+    transition: margin-left .5s;
+    padding: 50px;
+    background: #ffffff;
+}
+
+ul#subtopics {
+    list-style-type: none;
+    margin: 0;
+    margin-left: 15px;
+    padding: 0;
+}
+
+ul#subtopics li h6 {
+    padding: 5px 0px;
+    font-weight: bold;
+    color: #B00D2A;
+}
+
+ul#titles li {
+    list-style-type: square;
+    color: #007bff;
+    margin-left: -5px;
+}
+
+ul#titles li a {
+    padding: 0px;
+}
+
+@media all and (max-width: 1200px) {
+    aside#course-aside {
+        width: 0%;
+        max-width: 75% !important;
+        top: 83px;
+    }
+    #course-main {
+        margin-left: 0%;
+    }    
+    .openBtn {
+        top: 100px;
+    }
+}
