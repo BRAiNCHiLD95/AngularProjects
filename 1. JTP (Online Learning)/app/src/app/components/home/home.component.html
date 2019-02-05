@@ -1,0 +1,14 @@
+<section id="homepage" class="text-light">
+    <aside id="home-aside">
+        <h5 class="text-center py-3 font-weight-bold">Our Latest Tutorials</h5>
+        <ol class="updates text-primary">
+            <li *ngFor="let item of tutorials">
+                <a class="nav-link" routerLink="course/{{item.subject_id}}/content/{{item.content_id}}"><strong><u>{{item.subject_name}}</u></strong>:  {{item.content_title }} [{{ item.created_at | date : 'dd MMM' }}]</a>
+            </li>
+        </ol>
+    </aside>
+    <main id="main" class="py-3">
+        <h4 class="text-center">JTP is the Best Portal to learn new technologies online</h4>
+        <h5 class="text-center py-3">Choose one of our top technologies and get started!</h5>
+    </main>
+</section>

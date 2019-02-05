@@ -1,0 +1,27 @@
+section#homepage {
+    display:flex;
+}
+
+main#main {
+    flex-grow:1;
+    padding: 15px;
+}
+
+aside#home-aside {
+    flex-shrink:0;
+    width:25%;
+    overflow-y: auto;
+}
+
+@media all and (max-width: 800px) {
+    section#homepage {
+        flex-flow: column-reverse;
+    }
+    main#main {
+        width: auto;
+        margin-top: -27px;
+    }
+    aside#home-aside {
+        width: auto;
+    }
+}
