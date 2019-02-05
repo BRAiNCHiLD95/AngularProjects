@@ -1,5 +1,5 @@
-# JTP - Knowledge is Power
-
+# JTP - An Online Learning Platform
+## Knowledge is Power
 This is a Project built while learning FrontEnd Development in Angular.
 
 Goto the <i>app</i> folder to see angular specific instructions incase you want to clone the repository.
