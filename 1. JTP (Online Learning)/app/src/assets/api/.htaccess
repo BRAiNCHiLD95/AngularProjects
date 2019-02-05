@@ -1,0 +1,6 @@
+<Files *.php>
+    <Limit POST> 
+        Order deny,allow 
+        Deny from all 
+    </Limit>
+</files>
